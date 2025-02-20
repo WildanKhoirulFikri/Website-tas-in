@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tas-In | Produk</title>
+    <!--===============================================================================================-->
+	  <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark main-bg">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <a class="navbar-brand me-auto" href="index.html">TAS-IN</a>
+          <ul class="navbar-nav ">
+            <li class="nav-item me-5">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link active" href="produk.html">Produk</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+      <!--banner-->
+    <div class="container-fluid banner-produk d-flex align-items-center" id="home">
+        <div class="container">
+          <h1 class="text-light text-center display-5 mb-3">Tas Kece, Kamu Pasti Pede</h1>
+
+          <div class="col-md-8 offset-md-2">
+            <div class="input-group input-group-lg justify-content-center mt-4">
+              <input 
+                  type="text" 
+                  id="searchInput" 
+                  class="form-control" 
+                  placeholder="Cari produk..."  
+                  onkeyup="filterProducts()"
+              />
+              <button class="btn btn-lg btn-outline-secondary" onclick="filterProducts()">
+                <i class="bi bi-search"></i>
+              </button>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <!--produk content-->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-4 col-lg-3 mb-5 wow fadeInUp">
+                <h4>Kategori</h4>
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="promo.html">Promo</a></li>
+                    <li class="list-group-item"><a href="produklk.html">Pria</a></li>
+                    <li class="list-group-item"><a href="produkwn.html">Wanita</a></li>
+                </ul>
+
+                <!-- Catatan Harga -->
+                <div class="mt-4 p-3 text-center bg-white border border-warning rounded">
+                  <p class="text-secondary h5 m-0">
+                      <b>Harga dapat berubah sewaktu-waktu</b>
+                  </p>
+              </div>
+            </div>
+                <div class="col-md-8 col-lg-9">
+                    <h4 align="center">Semua Produk</h4>
+                    <div class="row" id="productList">
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-3 mx-auto wow fadeInUp">
+                        <div class="card">
+                            <img src="image/product/versatile.jpeg" class="card-img-top" alt="tas-versatile">
+                            <div class="card-body">
+                                <h5 class="card-title text-center text-secondary"><strong>Water Resistant Backpack Bp.08</strong></h5>
+                                <p class="card-text text-center">Memiliki desain polos nan simpel dengan sembilan varian warna menarik.</p>
+                                <h4 class="text-center text-secondary mb-3">RP 339.000</h4>
+                                <a href="https://s.shopee.co.id/7pd0cf2jTA" class="btn btn-orange d-flex align-items-center justify-content-center">
+                                  <img src="image/logo.png" alt="Shopee Logo" style="width: 20px; height: 20px; margin-right: 10px;">
+                                  Beli Sekarang
+                              </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-3 mx-auto wow fadeInUp">
+                      <div class="card">
+                          <img src="image/product/Ciel-Sling-Bag.jpeg" class="card-img-top" alt="Ciel-Sling-Bag">
+                          <div class="card-body">
+                              <h5 class="card-title text-center text-secondary"><strong>Ciel Sling Bag</strong></h5>
+                              <p class="card-text text-center">Tampilannya yang elegan membuat tas ini cocok untuk digunakan dalam situasi formal.</p>
+                              <h4 class="text-center text-secondary mb-3">RP 80.000</h4>
+                              <a href="https://s.shopee.co.id/9UlEcDsnmz" class="btn btn-orange d-flex align-items-center justify-content-center">
+                                <img src="image/logo.png" alt="Shopee Logo" style="width: 20px; height: 20px; margin-right: 10px;">
+                                Beli Sekarang
+                            </a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-3 mx-auto wow fadeInUp">
+                    <div class="card">
+                        <img src="image/product/Sling-Bag-Integrate.jpeg" class="card-img-top" alt="Integrate">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-secondary"><strong>Kalibre Sling Bag Integrate</strong></h5>
+                            <p class="card-text text-center">Dilengkapi bantalan bahu yang nyaman sehingga enak dipakai.</p>
+                            <h4 class="text-center text-secondary mb-3">RP 425.000</h4>
+                            <a href="https://s.shopee.co.id/7fJaQI92SX" class="btn btn-orange d-flex align-items-center justify-content-center">
+                              <img src="image/logo.png" alt="Shopee Logo" style="width: 20px; height: 20px; margin-right: 10px;">
+                              Beli Sekarang
+                          </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-3 mx-auto wow fadeInUp">
+                  <div class="card">
+                      <img src="image/product/Frezee.png" class="card-img-top" alt="Frezee">
+                      <div class="card-body">
+                          <h5 class="card-title text-center text-secondary"><strong>LOVA Frezzy</strong></h5>
+                          <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <h4 class="text-center text-secondary mb-3">RP 90.000</h4>
+                          <a href="https://s.shopee.co.id/u9J8fbgh" class="btn btn-orange d-flex align-items-center justify-content-center">
+                            <img src="image/logo.png" alt="Shopee Logo" style="width: 20px; height: 20px; margin-right: 10px;">
+                            Beli Sekarang
+                        </a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-3 mx-auto wow fadeInUp">
+                <div class="card">
+                    <img src="image/product/Reven-Leather-Oslo-Bag.png" class="card-img-top" alt="Oslo-Bag">
+                    <div class="card-body">
+                        <h5 class="card-title text-center text-secondary"><strong>Reven Leather Oslo Bag</strong></h5>
+                        <p class="card-text text-center">Dibalut dengan tekstur khas material kulit crazy horse.</p>
+                        <h4 class="text-center text-secondary mb-3">RP 347.000</h4>
+                        <a href="https://s.shopee.co.id/7ANJpJ8ZRd" class="btn btn-orange d-flex align-items-center justify-content-center">
+                          <img src="image/logo.png" alt="Shopee Logo" style="width: 20px; height: 20px; margin-right: 10px;">
+                          Beli Sekarang
+                      </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-3 mx-auto wow fadeInUp">
+              <div class="card">
+                  <img src="image/product/Keyna-Mini-Satchel.jpeg" class="card-img-top" alt="Keyna-Mini-Satchel">
+                  <div class="card-body">
+                      <h5 class="card-title text-center text-secondary"><strong>Keyna Mini Satchel</strong></h5>
+                      <p class="card-text text-center">Ukurannya yang mini, terlihat manis dan feminin untuk dipadukan dengan dress atau kebaya.</p>
+                      <h4 class="text-center text-secondary mb-3">RP 120.000</h4>
+                      <a href="https://s.shopee.co.id/g9q5uSWCS" class="btn btn-orange d-flex align-items-center justify-content-center">
+                        <img src="image/logo.png" alt="Shopee Logo" style="width: 20px; height: 20px; margin-right: 10px;">
+                        Beli Sekarang
+                    </a>
+                  </div>
+              </div>
+          </div>
+                    </div>
+                      
+
+                    <nav class="mt-4 d-flex justify-content-center wow fadeInUp" aria-label="Page navigation example">
+                      <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="produk.html">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="produk1.html">1</a></li>
+                        <li class="page-item"><a class="page-link" href="produk2.html">2</a></li>
+                        <li class="page-item"><a class="page-link" href="produk3.html">3</a></li>
+                        <li class="page-item"><a class="page-link" href="produk2.html">Next</a></li>
+                      </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-3 content text-light main-color">
+      <div class="container">
+        <h5 class="text-center mb-4">Temui Kami</h5>
+        <div class="d-flex justify-content-center flex-row flex-wrap wow lightSpeedIn">
+          <div class="d-flex justify-content-center mx-2 hovered-card">
+            <i class="bi bi-facebook fs-4"></i>
+          </div>
+          <div class="d-flex justify-content-center mx-2 hovered-card">
+            <i class="bi bi-instagram fs-4"></i>
+          </div>
+          <div class="d-flex justify-content-center mx-2 hovered-card">
+            <i class="bi bi-tiktok fs-4"></i>
+          </div>
+          <div class="d-flex justify-content-center mx-2 hovered-card">
+            <i class="bi bi-youtube fs-4"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="bootstrap-5.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="js/main.js"></script>
+  
+    
+  
+    
+  
+</body>
+</html>
